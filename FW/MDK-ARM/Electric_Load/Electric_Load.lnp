@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"electric_load\startup_stm32f103xb.o"
+"electric_load\delay_timer4_tick.o"
+"electric_load\ili9341_gfx.o"
+"electric_load\ili9341_stm32_driver.o"
+"electric_load\main.o"
+"electric_load\stm32f1xx_it.o"
+"electric_load\stm32f1xx_hal_msp.o"
+"electric_load\stm32f1xx_hal_gpio_ex.o"
+"electric_load\stm32f1xx_hal_spi.o"
+"electric_load\stm32f1xx_hal_tim.o"
+"electric_load\stm32f1xx_hal_tim_ex.o"
+"electric_load\stm32f1xx_hal.o"
+"electric_load\stm32f1xx_hal_rcc.o"
+"electric_load\stm32f1xx_hal_rcc_ex.o"
+"electric_load\stm32f1xx_hal_gpio.o"
+"electric_load\stm32f1xx_hal_dma.o"
+"electric_load\stm32f1xx_hal_cortex.o"
+"electric_load\stm32f1xx_hal_pwr.o"
+"electric_load\stm32f1xx_hal_flash.o"
+"electric_load\stm32f1xx_hal_flash_ex.o"
+"electric_load\stm32f1xx_hal_exti.o"
+"electric_load\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Electric_Load\Electric_Load.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Electric_Load.map" -o Electric_Load\Electric_Load.axf
